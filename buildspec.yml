@@ -10,16 +10,11 @@ phases:
   pre_build:
     commands:
       - echo "Running the test"
-      - npm run test
+      - npm run test-ci
   build:
     commands:
       - echo "Building React app..."
       - npm run build
-  post_build:
-    commands:
-      - echo "Running tests..."
-      # Include your test commands here
-      - npm test
 
 artifacts:
   files:
